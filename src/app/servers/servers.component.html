@@ -11,3 +11,4 @@
 <input type="text" class="form-control" (input)="ouUpdateServerName($event)" />
 <input type="text" class="form-control" [(ngModel)]="serverName" />
 <p>Server Name :{{ serverName }}</p>
+<p *ngIf="serverName.length > 0">Server was Created: {{ serverName }}</p>
